@@ -1,57 +1,57 @@
 # Visual Eye — Offline Agent
 
-**Visual Eye Offline Agent v1.3 Beautiful UI** is a local-first visual analysis workspace created by **Mohammad Hossein Azad**.
+**Visual Eye Offline Agent v1.3 Beautiful UI** is a local-first visual analysis workspace created by **Muhammad-Hossein Azad**.
 
-The project is designed to help users load and analyze images through a local web interface. Its documented workflow includes **Quick**, **Deep**, and **Custom** analysis modes, image validation, session handling, and local result generation.
+It provides a locally hosted web interface for image upload, guided analysis, design recommendations, session memory, and local output generation.
 
-## Project status
+## Release status
 
-- Repository: Public
-- Current release target: v1.3
-- Source package: pending final upload and verification
-- License: not yet assigned; see [License and third-party notices](#license-and-third-party-notices)
+**Version:** 1.3 Beautiful UI  
+**Status:** Pre-release candidate — not a stable production release  
+**Creator:** Muhammad-Hossein Azad  
+**Contact:** mohammadhosseinazad3@gmail.com
 
-> This repository is being prepared for the verified v1.3 source release. Until the source files and dependency notices are uploaded, this README is an overview and not a complete installation guide.
+The v1.3 source archive has been recovered and its ZIP integrity verified. Core self-test, end-to-end workflow test, Python compilation, and the included loopback security regression test passed in the available Linux/Python 3.13 environment. These checks do not certify cross-platform compatibility, independent security, or production readiness.
+
+The source package is not yet committed to this repository. The repository currently contains this project overview only.
 
 ## Main capabilities
 
-- Local web-based interface for image analysis
+- Local web interface, normally at `http://127.0.0.1:8765`
 - Quick, Deep, and Custom analysis workflows
-- Image input validation and session management
-- Local result generation
-- Optional integration with [Ollama](https://ollama.com/) for local vision-model inference
-- Optional integration with [ComfyUI](https://www.comfy.org/) for compatible image-generation or editing workflows
+- Image validation and local session state
+- Design recommendations and local output generation
+- Optional local vision analysis through Ollama
+- Optional image-generation/editing integration through ComfyUI
+- Docker Compose files and Windows/Linux/macOS helper scripts
+
+The built-in analysis and design outputs are not the same as generative pixel-level image editing. Generative editing requires a separately installed and configured ComfyUI service, a compatible workflow, and model assets.
 
 ## Offline operation
 
-Visual Eye is intended for local-first use. Actual offline operation depends on the required application dependencies, model weights, and any optional services being installed and available locally before disconnecting from the internet. Optional ComfyUI workflows also require compatible workflows and models.
+The application is local-first, but the recovered ZIP does **not** include the Python wheelhouse, container images, Ollama model blobs, ComfyUI installation, or model weights. A truly offline deployment requires preparing and verifying all platform-specific dependencies and model assets on a connected staging machine first.
 
-## Important scope note
+## Important security limitation
 
-Visual Eye's built-in analysis and design guidance should not be confused with direct generative pixel editing. Generative image workflows require a separately configured ComfyUI service, a compatible workflow, and the required models.
+The built-in HTTP server does not provide user authentication or TLS. It is intended to remain bound to loopback on the local computer. Do not expose it to a LAN or the public internet. Optional Ollama and ComfyUI endpoints must also be secured and reviewed separately.
 
-## Installation
+## Privacy
 
-A verified, version-specific installation guide will be added with the v1.3 source package. Please do not rely on commands or setup steps from older versions until that guide is published.
+Uploaded images, generated outputs, and session history are stored locally in the application's data directory. The application does not include a complete in-app retention manager. Review the privacy documentation before using it with sensitive images.
 
-## Security and privacy
+## Licensing
 
-- Keep image files and generated results in locations you control.
-- Review configuration before exposing the local service to a network.
-- Do not expose development servers or model endpoints to the public internet without appropriate authentication and network controls.
-- Report suspected security issues privately to the project maintainer rather than publishing sensitive exploit details in an issue.
+The recovered source package contains an Apache License 2.0 for original Visual Eye project materials. That license does not automatically cover third-party software, AI models, model assets, or custom nodes. The package's third-party license inventory is preliminary and redistribution review remains incomplete.
 
-## License and third-party notices
+## Before a stable public release
 
-No open-source license has been assigned to this repository yet. Until a license file is added, all rights are reserved by the copyright holder to the extent permitted by applicable law. The presence of a public GitHub repository does not by itself grant permission to reuse, modify, or redistribute the code.
+- Complete dependency, container-image, model, and asset license review.
+- Pin exact dependency versions and container image digests.
+- Test clean installations on supported Windows, Linux, and macOS systems.
+- Complete English localization and bilingual QA.
+- Prepare a software bill of materials and final signed checksums.
+- Obtain the missing Academy Masterclass application source, if that component is to be included.
 
-Before release, third-party libraries, models, model weights, workflows, and assets must be reviewed individually and their required notices included.
-
-## Maintainer
-
-**Mohammad Hossein Azad**  
-Contact: mohammadhosseinazad3@gmail.com
-
----
+## Project slogan
 
 *See more. Smile more.*
