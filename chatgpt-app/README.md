@@ -33,3 +33,5 @@ The hosted MCP endpoint has passed health, initialization, tool discovery, resou
 - [Demo recording script](DEMO_RECORDING_SCRIPT.md)
 - [Release notes 1.1.2](RELEASE_NOTES_1.1.2.md)
 - [Submission checklist](SUBMISSION_CHECKLIST.md)
+
+- [Platform distribution eligibility status](PLATFORM_DISTRIBUTION_STATUS.md)
