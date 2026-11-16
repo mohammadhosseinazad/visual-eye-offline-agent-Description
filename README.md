@@ -65,3 +65,21 @@ A separate hosted MCP touch interface for the Visual Eye workflow is documented 
 - [ChatGPT app privacy policy](chatgpt-app/PRIVACY.md)
 - [ChatGPT app terms of use](chatgpt-app/TERMS.md)
 - [Support and issue tracker](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/issues)
+
+
+## Engineering documentation and company handover
+
+The following documents are maintained for developers, companies, and teams evaluating or adopting Visual Eye:
+
+- [Project handover and adoption checklist](docs/PROJECT_HANDOVER.md)
+- [Product scope and capability boundaries](docs/PRODUCT_SCOPE_AND_CAPABILITIES.md)
+- [Architecture and data flow](docs/ARCHITECTURE.md)
+- [Deployment and operations runbook](docs/DEPLOYMENT_AND_OPERATIONS.md)
+- [Security and privacy guidance](docs/SECURITY_AND_PRIVACY.md)
+- [QA matrix and release process](docs/QA_AND_RELEASE_PROCESS.md)
+- [Product roadmap and open work](docs/ROADMAP.md)
+- [Contributor and maintainer guidelines](CONTRIBUTING.md)
+- [Known release blockers](RELEASE_BLOCKERS.md)
+- [Preliminary third-party license review](THIRD_PARTY_LICENSE_REVIEW.md)
+
+**Important handover note:** These documents intentionally distinguish verified facts from open work. The Offline Agent v1.3 source archive is not yet committed to this repository, and the hosted MCP interface is a separate deliverable. A company considering adoption should follow the handover checklist and confirm source, rights, dependencies, and test evidence with the original creator.
