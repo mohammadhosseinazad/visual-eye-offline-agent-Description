@@ -55,3 +55,13 @@ The recovered source package contains an Apache License 2.0 for original Visual 
 ## Project slogan
 
 *See more. Smile more.*
+
+
+## Separate ChatGPT interface
+
+A separate hosted MCP touch interface for the Visual Eye workflow is documented in [chatgpt-app/](chatgpt-app/). This ChatGPT integration is distinct from the local-first Offline Agent described above; it provides workflow controls and does not itself run the local Ollama/ComfyUI stack.
+
+- [ChatGPT app overview](chatgpt-app/README.md)
+- [ChatGPT app privacy policy](chatgpt-app/PRIVACY.md)
+- [ChatGPT app terms of use](chatgpt-app/TERMS.md)
+- [Support and issue tracker](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/issues)
