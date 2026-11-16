@@ -20,6 +20,8 @@ The MCP service provides the interface and workflow state only. It does **not** 
 
 ## Current release status
 
+**MCP service code:** 1.1.2 (domain-verification route prepared; current deployment still needs a post-commit check)
+
 The hosted MCP endpoint has passed health, initialization, tool discovery, resource discovery/read, and a direct `visual-eye.render` tool-call test. Rendering the interface inside ChatGPT and public directory approval are separate steps and are not claimed as completed.
 
 **طراح برنامه: محمدحسین آزاد**
