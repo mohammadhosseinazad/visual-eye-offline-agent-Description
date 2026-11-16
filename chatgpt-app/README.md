@@ -25,3 +25,11 @@ The MCP service provides the interface and workflow state only. It does **not** 
 The hosted MCP endpoint has passed health, initialization, tool discovery, resource discovery/read, and a direct `visual-eye.render` tool-call test. Rendering the interface inside ChatGPT and public directory approval are separate steps and are not claimed as completed.
 
 **طراح برنامه: محمدحسین آزاد**
+
+## App Directory submission preparation
+
+- [Submission listing metadata](SUBMISSION_METADATA.md)
+- [Positive and negative QA test cases](QA_TEST_CASES.md)
+- [Demo recording script](DEMO_RECORDING_SCRIPT.md)
+- [Release notes 1.1.2](RELEASE_NOTES_1.1.2.md)
+- [Submission checklist](SUBMISSION_CHECKLIST.md)
