@@ -1,56 +1,43 @@
-# Visual Eye — Open Source Project
+# Visual Eye — Offline Agent
 
-**Creator:** Muhammad-Hossein Azad  
-**Contact:** mohammadhosseinazad3@gmail.com  
-**Project:** Visual Eye Offline Agent v1.3 Beautiful UI  
-**License:** Apache-2.0 for original project materials; third-party components retain their own licenses.
+**Visual Eye Offline Agent v1.3 Beautiful UI** is a local-first visual analysis workspace created by **Muhammad-Hossein Azad**.
 
-Visual Eye is a local-first visual analysis workspace. The application source, Persian interface, English UI preview, analysis engine, setup scripts, Docker files, documentation, and tests are now published in this repository.
+## Source package
 
-## Get the source
+The complete v1.3 source archive has been recovered from the project files, cleaned of test uploads, generated outputs, session records, local path pointers, and Python cache files, and validated. It contains the Offline Agent source, Persian interface, English UI preview, engine, setup scripts, Docker files, guides, tests, and the supplied Master Prompt Studio and Academy reference materials.
 
-- [Offline Agent source code](source/v1.3/01_Offline_Agent/)
-- [English README and quick start](source/v1.3/01_Offline_Agent/README_EN.md)
-- [Persian installation guide](source/v1.3/01_Offline_Agent/01_INSTALL_GUIDE.html)
-- [Persian user guide](source/v1.3/01_Offline_Agent/02_USER_GUIDE.html)
-- [Security notes](source/v1.3/01_Offline_Agent/11_SECURITY_NOTES.html)
-- [Release blockers](source/v1.3/RELEASE_BLOCKERS.md)
-- [Third-party license review](source/v1.3/THIRD_PARTY_LICENSE_REVIEW.md)
+**The source tree has not yet been committed to this GitHub repository.** A clean archive is available in the current ChatGPT conversation as `Visual_Eye_v1.3_Source_Clean.zip`. Its SHA-256 is:
 
-Use GitHub's **Code → Download ZIP** to download the repository source.
+`24eb1237f29e10f4c4fa32de27d08ab1975be444cd53e452a96fea5a2820034b`
 
-## Quick start
+The ZIP passed its archive integrity check. In the available Linux/Python 3.13 environment, Python compilation, `SELF_TEST.py`, `E2E_TEST.py`, `SECURITY_TEST.py`, and `SESSION_SECURITY_TEST.py` passed. These checks do not certify cross-platform compatibility, independent security, or production readiness.
 
-Read the installation guide first.
+## Main capabilities
 
-- Windows: run `source/v1.3/01_Offline_Agent/RUN_WINDOWS.bat`.
-- Linux/macOS: run `chmod +x source/v1.3/01_Offline_Agent/RUN_LINUX_MAC.sh && ./source/v1.3/01_Offline_Agent/RUN_LINUX_MAC.sh`.
-- Default local address: `http://127.0.0.1:8765`.
-- Python 3.10+ is recommended. Install the dependencies listed in `requirements.txt`.
+- Local web interface, normally at `http://127.0.0.1:8765`
+- Quick, Deep, and Custom analysis workflows
+- Image validation and local session state
+- Design recommendations and local output generation
+- Optional local vision analysis through Ollama
+- Optional image-generation/editing integration through ComfyUI
+- Docker Compose files and Windows/Linux/macOS helper scripts
 
-Optional AI integrations require separately installed Ollama and/or ComfyUI services and separately downloaded model assets. Those large model files and offline dependency bundles are not included.
+The built-in analysis and design outputs are not equivalent to generative pixel-level image editing. Generative editing requires a separately installed and configured ComfyUI service, a compatible workflow, and model assets.
 
-## Important safety notice
+## Important security limitation
 
-**v1.3 is a pre-release candidate, not a production-hardened server.** The built-in HTTP service has no user authentication or TLS and is intended for local loopback use only. Do not expose it to a LAN, VPN, public IP, reverse proxy, or the Internet. Keep the bind address at `127.0.0.1`.
+The built-in HTTP server does not provide user authentication or TLS. It is intended for localhost use only. Do not expose it to a LAN or the public internet. The server rejects non-loopback binding in its current configuration.
 
-The included tests passed in the available Linux/Python 3.13 environment, but this does not certify cross-platform compatibility, production security, model quality, or a fully offline installation. Read the security, privacy, and release-blocker documents before use or redistribution.
+## Offline operation
 
-## Included checks
+The clean source archive does not include Python wheel bundles, container images, Ollama model blobs, ComfyUI installation, or model weights. A truly offline deployment requires preparing and verifying all platform-specific dependencies and model assets separately.
 
-From `source/v1.3/01_Offline_Agent/`:
+## Licensing
 
-```bash
-python -m compileall -q .
-python SELF_TEST.py
-python E2E_TEST.py
-python SECURITY_TEST.py
-python SESSION_SECURITY_TEST.py
-```
+The source archive includes an Apache License 2.0 for original Visual Eye project materials. Third-party software, models, assets, and custom nodes retain their own licenses; redistribution review is still required.
 
-## Other project materials
+## Separate ChatGPT interface
 
-- [Master Prompt Studio](source/v1.3/02_Master_Prompt_Studio/)
-- [Academy Masterclass references and status](source/v1.3/03_Academy_Masterclass/)
+The hosted MCP touch interface is a separate deliverable from the Offline Agent. Its secure setup workflow is described in [docs/SERVER_SETUP_AND_AUTO_CONNECT.md](docs/SERVER_SETUP_AND_AUTO_CONNECT.md).
 
 *See more. Smile more.*
