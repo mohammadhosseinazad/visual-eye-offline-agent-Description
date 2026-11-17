@@ -67,6 +67,10 @@ A separate hosted MCP touch interface for the Visual Eye workflow is documented 
 - [Support and issue tracker](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/issues)
 
 
+## Server Setup & Auto Connect
+
+The shared secure setup and connection specification for Offline Agent and the hosted ChatGPT app is documented in [docs/SERVER_SETUP_AND_AUTO_CONNECT.md](docs/SERVER_SETUP_AND_AUTO_CONNECT.md). This is an engineering specification, not a shipped installer; the complete Offline Agent source must be restored before implementation and platform testing.
+
 ## Engineering documentation and company handover
 
 The following documents are maintained for developers, companies, and teams evaluating or adopting Visual Eye:
