@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc">
+<title id="title">Visual Eye — See more. Smile more.</title>
+<desc id="desc">Promotional artwork showing the Visual Eye desktop Offline Agent and mobile ChatGPT companion side by side.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#06143d"/><stop offset=".55" stop-color="#073d86"/><stop offset="1" stop-color="#020b27"/></linearGradient>
+ <linearGradient id="cyan" x2="1" y2="1"><stop stop-color="#38e7ff"/><stop offset="1" stop-color="#1765ff"/></linearGradient>
+ <linearGradient id="purple" x2="1" y2="1"><stop stop-color="#a855f7"/><stop offset="1" stop-color="#5b21b6"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1440" height="810" rx="28" fill="url(#bg)"/>
+<circle cx="1200" cy="100" r="230" fill="#087dff" opacity=".12"/><circle cx="220" cy="700" r="260" fill="#00d9ff" opacity=".08"/>
+<g fill="none" stroke="#20cfff" opacity=".25"><path d="M0 610 Q360 500 720 610 T1440 590"/><path d="M0 650 Q360 540 720 650 T1440 630"/></g>
+<g transform="translate(72 54)">
+ <path d="M0 48 Q62 -8 124 48 Q62 105 0 48Z" fill="none" stroke="url(#cyan)" stroke-width="10"/>
+ <circle cx="62" cy="48" r="25" fill="#18cfff"/><circle cx="62" cy="48" r="12" fill="#06143d"/>
+ <text x="150" y="63" fill="#fff" font-family="Arial,sans-serif" font-size="64" font-weight="700">Visual <tspan fill="#30dfff">Eye</tspan></text>
+ <text x="154" y="108" fill="#d7edff" font-family="Arial,sans-serif" font-size="27" font-style="italic">See more. Smile more.</text>
+</g>
+<text x="1365" y="95" text-anchor="end" fill="#aeeeff" font-family="Arial,sans-serif" font-size="24">YOUR AI VISION COMPANION</text>
+<text x="720" y="210" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="32" font-weight="700">Two ways to experience Visual Eye</text>
+<!-- Desktop app -->
+<g transform="translate(90 270)">
+ <rect x="0" y="0" width="800" height="390" rx="25" fill="#0b1c45" stroke="#39dfff" stroke-width="3" filter="url(#glow)"/>
+ <rect x="18" y="18" width="764" height="46" rx="12" fill="#102b61"/>
+ <circle cx="44" cy="41" r="7" fill="#36e7ff"/><text x="64" y="49" fill="#fff" font-family="Arial,sans-serif" font-size="22" font-weight="700">Visual Eye · Offline Agent</text>
+ <rect x="22" y="80" width="180" height="285" rx="14" fill="#10234f"/>
+ <g fill="#d8eaff" font-family="Arial,sans-serif" font-size="19"><text x="48" y="125">⌂  Home</text><text x="48" y="175">◉  Vision</text><text x="48" y="225">▤  Server</text><text x="48" y="275">⚙  Settings</text><text x="48" y="325">ⓘ  About</text></g>
+ <rect x="220" y="80" width="540" height="285" rx="16" fill="#071638"/>
+ <circle cx="490" cy="190" r="86" fill="none" stroke="#1bcfff" stroke-width="4" opacity=".8"/>
+ <circle cx="490" cy="190" r="55" fill="#0a4c9b" stroke="#61e9ff" stroke-width="4"/>
+ <circle cx="490" cy="190" r="26" fill="#03112f"/>
+ <path d="M408 190 Q490 112 572 190 Q490 268 408 190Z" fill="none" stroke="#9af4ff" stroke-width="5"/>
+ <text x="490" y="310" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="27" font-weight="700">Analyze images locally</text>
+ <rect x="330" y="330" width="320" height="24" rx="12" fill="#064e45"/><text x="490" y="348" text-anchor="middle" fill="#85ffd6" font-family="Arial,sans-serif" font-size="14">LOCAL-FIRST WORKSPACE</text>
+ <path d="M-35 400 H835 L790 425 H10Z" fill="#829ab9"/><path d="M300 400 H500 L530 414 H270Z" fill="#253d60"/>
+</g>
+<!-- Mobile app -->
+<g transform="translate(1010 250)">
+ <rect x="0" y="0" width="270" height="430" rx="42" fill="#071126" stroke="#56e8ff" stroke-width="5" filter="url(#glow)"/>
+ <rect x="14" y="17" width="242" height="396" rx="31" fill="#0c1d49"/>
+ <rect x="95" y="23" width="80" height="13" rx="7" fill="#020817"/>
+ <text x="135" y="85" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="27" font-weight="700">Visual <tspan fill="#39e5ff">Eye</tspan></text>
+ <circle cx="135" cy="160" r="52" fill="none" stroke="#24d7ff" stroke-width="3"/><path d="M85 160 Q135 112 185 160 Q135 208 85 160Z" fill="none" stroke="#b2faff" stroke-width="5"/><circle cx="135" cy="160" r="18" fill="#16bff7"/>
+ <text x="135" y="240" text-anchor="middle" fill="#dceeff" font-family="Arial,sans-serif" font-size="16">See more. Smile more.</text>
+ <rect x="31" y="270" width="208" height="58" rx="14" fill="url(#purple)"/><text x="135" y="306" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="19" font-weight="700">Vision · Analyze</text>
+ <rect x="31" y="340" width="208" height="52" rx="14" fill="url(#cyan)"/><text x="135" y="373" text-anchor="middle" fill="#06143d" font-family="Arial,sans-serif" font-size="18" font-weight="700">Connect to your app</text>
+</g>
+<g transform="translate(90 730)" font-family="Arial,sans-serif">
+ <text x="0" y="0" fill="#fff" font-size="22" font-weight="700">OFFLINE AGENT</text><text x="0" y="31" fill="#a9d9ff" font-size="17">Windows · Linux · macOS</text>
+ <text x="700" y="0" text-anchor="middle" fill="#fff" font-size="22" font-weight="700">CHATGPT APP</text><text x="700" y="31" text-anchor="middle" fill="#a9d9ff" font-size="17">Mobile-friendly interface</text>
+ <text x="1260" y="0" text-anchor="end" fill="#ffe07a" font-size="24" font-weight="700">OPEN SOURCE · COMMUNITY</text>
+</g>
+</svg>
