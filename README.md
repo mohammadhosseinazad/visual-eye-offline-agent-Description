@@ -64,6 +64,10 @@ The source archive does not include Python wheel bundles, container images, Olla
 
 The original Visual Eye project materials include an Apache License 2.0. Third-party software, models, assets, and custom nodes retain their own licenses; redistribution review is still required.
 
+## Downloads
+
+- [Download both Visual Eye editions](DOWNLOADS.md)
+
 ## Documentation
 
 - [Server Setup & Auto Connect specification](docs/SERVER_SETUP_AND_AUTO_CONNECT.md)
