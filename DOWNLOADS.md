@@ -1,40 +1,36 @@
 # Visual Eye — Downloads
 
-Choose the version that matches how you want to use Visual Eye.
+Choose the experience that matches your device.
+
+## Public product website
+
+- [Open the Visual Eye multilingual website](https://mohammadhosseinazad.github.io/visual-eye-offline-agent-Description/)
+- The landing page currently provides Persian, English, Arabic, Turkish, Russian, Spanish, French, German, and Simplified Chinese UI translations.
+- The language selector is stored in the browser and supports right-to-left layout for Persian and Arabic.
 
 ## 1. Visual Eye Offline Agent
 
-**Version:** v1.3 — Beautiful UI  
-**Platforms:** Windows, Linux, macOS (source package; platform-specific setup may be required)  
-**Package type:** Source ZIP  
-**Status:** Validated pre-release; public GitHub release asset is pending manual upload.
+- [Open the official GitHub Releases page](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/releases)
+- [Browse source code and documentation](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description)
 
-- [Open Offline Agent releases](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/releases)
-- [View Offline Agent source and documentation](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description)
+The Offline Agent is a local-first source package with Windows and Linux setup guidance. The GitHub release page is the authoritative place to see which assets are currently published. Check the exact asset filename and release notes before downloading.
 
-**SHA-256 of the prepared v1.3 source archive:**
-`24eb1237f29e10f4c4fa32de27d08ab1975be444cd53e452a96fea5a2820034b`
+**Important distribution limits**
+- The available package is source code, not a signed Windows installer or Linux package such as .deb/.rpm/AppImage.
+- Platform-specific clean-install testing is still required.
+- A complete offline bundle is not yet available: Python wheels, container images, Ollama model files, ComfyUI setup, and model weights are not all included.
+- The built-in HTTP service is intended for localhost only. It has no built-in user authentication or TLS; do not expose it to a LAN or the internet.
 
-The ZIP is not attached to the GitHub release yet. The release page will become the public download location after the maintainer uploads the archive and publishes the release. Do not treat the repository's automatically generated ZIP as the prepared v1.3 package.
+## 2. Mobile / ChatGPT companion
 
-**Security note:** The built-in HTTP service is intended for localhost only. It has no built-in authentication or TLS; do not expose it to a LAN or the internet.
+- [Open the ChatGPT companion source repository](https://github.com/mohammadhosseinazad/visual-eye-touch-mcp-app)
+- [Download the companion source ZIP](https://github.com/mohammadhosseinazad/visual-eye-touch-mcp-app/archive/refs/heads/main.zip)
 
-## 2. Visual Eye ChatGPT App
+This is a mobile-friendly ChatGPT/MCP source project, not a standalone Android APK or iOS app. It requires the supported ChatGPT/MCP hosting and setup path. App Directory listing or approval must not be claimed unless it is actually granted.
 
-A mobile-friendly companion/MCP app project maintained in a separate repository.
+## Release readiness
 
-- [Download ChatGPT App source ZIP](https://github.com/mohammadhosseinazad/visual-eye-touch-mcp-app/archive/refs/heads/main.zip)
-- [Open ChatGPT App repository](https://github.com/mohammadhosseinazad/visual-eye-touch-mcp-app)
-
-This is a source-code ZIP, not an Android APK. It requires the supported ChatGPT app/MCP setup and configuration; it is not a standalone mobile installer.
-
-## Before publishing a release
-
-1. Upload the prepared `Visual_Eye_v1.3_Source_Clean.zip` file to a GitHub Release.
-2. Publish the release with a clear version tag (for example, `v1.3.0`).
-3. Verify the uploaded asset can be downloaded.
-4. Confirm its SHA-256 matches the value above.
-5. Update this page with the final release asset link and any platform-specific installation packages.
+The public website and its nine-language landing-page UI are available. The desktop package, standalone mobile installers, complete offline dependencies/models, security review, license review, and cross-platform certification remain separate release tasks. See [RELEASE_BLOCKERS.md](RELEASE_BLOCKERS.md) for the current checklist.
 
 ---
 Created by **Muhammad-Hossein Azad**.
