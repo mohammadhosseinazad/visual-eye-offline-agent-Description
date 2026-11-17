@@ -23,9 +23,9 @@ These checks cover only the supplied test environment. They are not an independe
 6. Keep the built-in HTTP server on localhost. It has no user authentication or TLS; LAN/public exposure is unsupported.
 7. Obtain the actual Academy Masterclass HTML/application if that component is intended for distribution.
 8. Generate a final SBOM, checksums, and signed release artifacts after all release changes.
-9. Upload the verified source package and supporting documents to the GitHub repository.
+9. Publish a clearly identified source package and supporting documents as release assets; verify the exact asset name, size, and SHA-256 against the release record.\n10. Add platform-specific binary packaging only after clean-install testing (for example, a signed Windows installer and suitable Linux packages).\n11. Complete website download-flow QA on desktop and mobile, including every language and each platform link.\n12. Decide whether a standalone Android/iOS application is in scope; the current ChatGPT/MCP companion source is not a mobile installer.
 
-## Offline deployment limitation
+## Website and localization status\n\nThe public GitHub Pages landing page is published and currently includes nine interface languages (Persian, English, Arabic, Turkish, Russian, Spanish, French, German, and Simplified Chinese), a responsive catalog-style showcase, and links to the release/source repositories. This is website localization only; it does not prove that every desktop workflow, generated AI response, error message, installer, or mobile application is fully translated.\n\nThe download page must describe the currently published release assets accurately. A source ZIP must never be labeled as a native Windows/Linux installer or standalone mobile app.\n\n## Offline deployment limitation
 
 The source archive does not include all platform-specific Python wheels, container images, Ollama model blobs, ComfyUI installation, or AI model weights. A truly offline installation requires preparing and verifying those assets on a connected staging machine before transfer.
 
