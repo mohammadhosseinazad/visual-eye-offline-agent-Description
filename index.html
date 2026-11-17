@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#06143d">
+<meta name="description" content="Visual Eye؛ همراه هوشمند بینایی با هوش مصنوعی. نسخه‌های ویندوز، لینوکس و همراه ChatGPT.">
+<title>Visual Eye | بیشتر ببین، بیشتر خلق کن</title>
+<style>
+:root{--navy:#06143d;--deep:#020a24;--cyan:#20d9ff;--blue:#087cf5;--gold:#ffd21c;--white:#f5fbff;--muted:#b9d5ef}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--white);font-family:Tahoma,"Segoe UI",Arial,sans-serif;background:radial-gradient(ellipse at 50% 0%,#123d8c 0,#071b50 38%,var(--deep) 100%);min-height:100vh}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0;gap:18px}.brand{display:flex;align-items:center;gap:12px;font-size:clamp(22px,4vw,34px);font-weight:900;letter-spacing:-1px}.eye{width:48px;height:32px;border:3px solid var(--cyan);border-radius:90% 10%;transform:rotate(45deg);display:grid;place-items:center;box-shadow:0 0 22px #12cfff}.eye:after{content:"";width:15px;height:15px;background:#00cfff;border:4px solid white;border-radius:50%;box-shadow:0 0 14px #00d9ff}
+nav{display:flex;gap:20px;color:var(--muted);font-size:14px}nav a:hover{color:white}
+.hero{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:34px;padding:42px 0 60px;min-height:530px}
+.kicker{color:var(--cyan);font-weight:700;letter-spacing:1px}.hero h1{font-size:clamp(42px,6vw,76px);line-height:1.12;margin:12px 0}.hero h1 span{color:var(--cyan);text-shadow:0 0 28px #00cfff66}.tagline{font-size:clamp(20px,3vw,28px);font-weight:700;margin:0 0 16px}.sub{color:var(--muted);line-height:2;font-size:16px;max-width:570px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 22px;border-radius:15px;font-weight:800;transition:.2s;border:1px solid #49dfff66}.btn:hover{transform:translateY(-3px);filter:brightness(1.12)}.primary{background:linear-gradient(110deg,#ffbd00,#ffdf35);color:#071334;border:0;box-shadow:0 8px 30px #ffcb2540}.secondary{background:#0a2c69;color:white}.visual{position:relative;min-height:350px;display:grid;place-items:center}.orb{width:min(390px,80vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 50% 48%,#07142e 0 19%,#0878df 20% 23%,#20dfff 24% 29%,#073c9a 35%,#06143d 65%);box-shadow:0 0 35px #00cfff, inset 0 0 45px #05baff;position:relative}.orb:before,.orb:after{content:"";position:absolute;inset:8%;border:2px solid #36dfff99;border-radius:50%;box-shadow:0 0 30px #00bfff}.orb:after{inset:19%;border-style:dashed;opacity:.7}.orbit{position:absolute;width:110%;height:35%;border:2px solid #17d7ff99;border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 18px #00cfff}.glow{position:absolute;inset:0;background:radial-gradient(circle,#06cfff24,transparent 60%);pointer-events:none}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:4px 0 70px}.feature{background:linear-gradient(145deg,#0d3270dd,#071a48dd);border:1px solid #28cfff55;border-radius:18px;padding:20px;box-shadow:0 12px 30px #0003}.feature b{display:block;margin-bottom:8px;font-size:17px}.feature span{color:var(--muted);font-size:13px;line-height:1.8}
+.section-title{text-align:center;font-size:clamp(27px,4vw,40px);margin:0 0 10px}.section-sub{text-align:center;color:var(--muted);margin:0 auto 28px;line-height:1.9}
+.downloads{padding:24px 0 72px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:linear-gradient(160deg,#102e68,#07183e);border:1px solid #28cfff66;border-radius:22px;padding:24px;display:flex;flex-direction:column;min-height:290px;box-shadow:0 16px 35px #0004}.icon{font-size:38px;margin-bottom:12px}.card h3{font-size:23px;margin:0 0 10px}.card p{color:var(--muted);line-height:1.9;font-size:14px;flex:1}.card .btn{width:100%;margin-top:14px}.note{margin:18px auto 0;padding:16px 18px;border:1px solid #ffd21c66;border-radius:14px;color:#ffe99a;background:#7b5b0926;line-height:1.9;font-size:13px;max-width:900px}
+footer{border-top:1px solid #2b8ac866;padding:25px 0;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-brand{color:white;font-weight:800}
+@media(max-width:800px){nav{display:none}.hero{grid-template-columns:1fr;text-align:center;padding:34px 0 40px;gap:15px}.sub{margin:auto}.actions{justify-content:center}.visual{min-height:270px}.orb{width:260px}.features{grid-template-columns:repeat(2,1fr);margin-bottom:48px}.cards{grid-template-columns:1fr}.card{min-height:0}.hero h1{font-size:48px}}
+@media(max-width:420px){.features{grid-template-columns:1fr}.brand{font-size:23px}.btn{width:100%}.hero h1{font-size:42px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="brand" href="#"><i class="eye"></i><span>Visual <span style="color:var(--cyan)">Eye</span></span></a><nav><a href="#features">ویژگی‌ها</a><a href="#downloads">دریافت محصول</a><a href="https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description">GitHub</a></nav></header>
+<main>
+<section class="hero">
+<div><div class="kicker">همراه هوشمند بینایی شما</div><h1>Visual <span>Eye</span></h1><p class="tagline">بیشتر ببین. بیشتر خلق کن.</p><p class="sub">یک دستیار بصری مبتنی بر هوش مصنوعی برای تحلیل تصویر، بررسی طراحی و بهبود تجربهٔ بصری؛ با تمرکز بر حریم خصوصی و اجرای محلی.</p><div class="actions"><a class="btn primary" href="#downloads">⬇ دریافت Visual Eye</a><a class="btn secondary" href="https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description">مشاهده در GitHub ↗</a></div></div>
+<div class="visual" aria-label="Visual Eye digital eye artwork"><div class="orb"><div class="orbit"></div></div><div class="glow"></div></div>
+</section>
+<section id="features" class="features">
+<div class="feature"><b>◉ دستیار بینایی هوشمند</b><span>تحلیل تصویر و کمک به بررسی جزئیات بصری</span></div>
+<div class="feature"><b>▣ راه‌اندازی چندسکویی</b><span>راهنمای اجرا برای Windows و Linux</span></div>
+<div class="feature"><b>♢ حریم خصوصی</b><span>امکان اجرای محلی؛ تنظیمات شبکه را با دقت بررسی کنید</span></div>
+<div class="feature"><b>⚡ سبک و توسعه‌پذیر</b><span>متن‌باز و قابل بررسی در GitHub</span></div>
+</section>
+<section id="downloads" class="downloads">
+<h2 class="section-title">نسخهٔ مناسب خودت را دریافت کن</h2><p class="section-sub">دستگاهت را انتخاب کن تا به فایل‌ها و راهنمای همان نسخه بروی.</p>
+<div class="cards">
+<article class="card"><div class="icon">🪟</div><h3>Windows 10 / 11</h3><p>بستهٔ سورس چندسکویی را دریافت کن. درون بسته، فایل راه‌اندازی ویندوز و راهنمای نصب قرار دارد.</p><a class="btn primary" href="https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/releases">دریافت نسخه ویندوز ↗</a></article>
+<article class="card"><div class="icon">🐧</div><h3>Linux</h3><p>مناسب توزیع‌هایی مانند Ubuntu و Debian. بسته شامل اسکریپت‌های اجرا و راهنمای لینوکس است.</p><a class="btn primary" href="https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/releases">دریافت نسخه لینوکس ↗</a></article>
+<article class="card"><div class="icon">📱</div><h3>Mobile / ChatGPT</h3><p>برای استفادهٔ همراه، صفحهٔ پروژهٔ ChatGPT را ببین. این گزینه سورس برنامه است و APK مستقل اندروید نیست.</p><a class="btn secondary" href="https://github.com/mohammadhosseinazad/visual-eye-touch-mcp-app">مشاهده نسخه همراه ↗</a></article>
+</div>
+<div class="note">توجه: لینک‌های Windows و Linux به صفحهٔ انتشارها هدایت می‌شوند. تا زمانی که فایل ZIP به بخش Releases پیوست نشده باشد، دانلود مستقیم نسخهٔ نهایی در دسترس نخواهد بود. نسخهٔ موبایل فعلاً APK مستقل ندارد.</div>
+</section>
+</main>
+<footer><span class="footer-brand">Visual Eye — See more. Smile more.</span><span>متن‌باز • ساخته‌شده با علاقه • طراح برنامه: محمدحسین آزاد</span></footer>
+</div>
+</body></html>
