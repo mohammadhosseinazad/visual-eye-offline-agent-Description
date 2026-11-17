@@ -23,7 +23,7 @@
 |---|---|
 | Local-first image-analysis workspace for Windows, Linux, and macOS. | Mobile-friendly companion interface for the Visual Eye workflow in ChatGPT. |
 | Python application with local UI, analysis engine, setup scripts, guides, and tests. | Separate MCP app project; requires the supported ChatGPT app/connector setup. |
-| [Offline Agent release downloads](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/releases) | [ChatGPT App repository and source](https://github.com/mohammadhosseinazad/visual-eye-touch-mcp-app) |
+| [Offline Agent release downloads](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/releases) | [Download ChatGPT App source ZIP](https://github.com/mohammadhosseinazad/visual-eye-touch-mcp-app/archive/refs/heads/main.zip) |
 
 **Download status:** The GitHub releases page is the intended public distribution point for the Offline Agent ZIP and checksums; release assets have not yet been attached. The ChatGPT App source is maintained in its separate repository. Please do not mistake the current documentation repository ZIP for the complete Offline Agent installer.
 
