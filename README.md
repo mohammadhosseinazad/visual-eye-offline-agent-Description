@@ -1,89 +1,56 @@
-# Visual Eye — Offline Agent
+# Visual Eye — Open Source Project
 
-**Visual Eye Offline Agent v1.3 Beautiful UI** is a local-first visual analysis workspace created by **Muhammad-Hossein Azad**.
-
-It provides a locally hosted web interface for image upload, guided analysis, design recommendations, session memory, and local output generation.
-
-## Release status
-
-**Version:** 1.3 Beautiful UI  
-**Status:** Pre-release candidate — not a stable production release  
 **Creator:** Muhammad-Hossein Azad  
-**Contact:** mohammadhosseinazad3@gmail.com
+**Contact:** mohammadhosseinazad3@gmail.com  
+**Project:** Visual Eye Offline Agent v1.3 Beautiful UI  
+**License:** Apache-2.0 for original project materials; third-party components retain their own licenses.
 
-The v1.3 source archive has been recovered and its ZIP integrity verified. Core self-test, end-to-end workflow test, Python compilation, and the included loopback security regression test passed in the available Linux/Python 3.13 environment. These checks do not certify cross-platform compatibility, independent security, or production readiness.
+Visual Eye is a local-first visual analysis workspace. The application source, Persian interface, English UI preview, analysis engine, setup scripts, Docker files, documentation, and tests are now published in this repository.
 
-The source package is not yet committed to this repository. The repository currently contains this project overview only.
+## Get the source
 
-## Main capabilities
+- [Offline Agent source code](source/v1.3/01_Offline_Agent/)
+- [English README and quick start](source/v1.3/01_Offline_Agent/README_EN.md)
+- [Persian installation guide](source/v1.3/01_Offline_Agent/01_INSTALL_GUIDE.html)
+- [Persian user guide](source/v1.3/01_Offline_Agent/02_USER_GUIDE.html)
+- [Security notes](source/v1.3/01_Offline_Agent/11_SECURITY_NOTES.html)
+- [Release blockers](source/v1.3/RELEASE_BLOCKERS.md)
+- [Third-party license review](source/v1.3/THIRD_PARTY_LICENSE_REVIEW.md)
 
-- Local web interface, normally at `http://127.0.0.1:8765`
-- Quick, Deep, and Custom analysis workflows
-- Image validation and local session state
-- Design recommendations and local output generation
-- Optional local vision analysis through Ollama
-- Optional image-generation/editing integration through ComfyUI
-- Docker Compose files and Windows/Linux/macOS helper scripts
+Use GitHub's **Code → Download ZIP** to download the repository source.
 
-The built-in analysis and design outputs are not the same as generative pixel-level image editing. Generative editing requires a separately installed and configured ComfyUI service, a compatible workflow, and model assets.
+## Quick start
 
-## Offline operation
+Read the installation guide first.
 
-The application is local-first, but the recovered ZIP does **not** include the Python wheelhouse, container images, Ollama model blobs, ComfyUI installation, or model weights. A truly offline deployment requires preparing and verifying all platform-specific dependencies and model assets on a connected staging machine first.
+- Windows: run `source/v1.3/01_Offline_Agent/RUN_WINDOWS.bat`.
+- Linux/macOS: run `chmod +x source/v1.3/01_Offline_Agent/RUN_LINUX_MAC.sh && ./source/v1.3/01_Offline_Agent/RUN_LINUX_MAC.sh`.
+- Default local address: `http://127.0.0.1:8765`.
+- Python 3.10+ is recommended. Install the dependencies listed in `requirements.txt`.
 
-## Important security limitation
+Optional AI integrations require separately installed Ollama and/or ComfyUI services and separately downloaded model assets. Those large model files and offline dependency bundles are not included.
 
-The built-in HTTP server does not provide user authentication or TLS. It is intended to remain bound to loopback on the local computer. Do not expose it to a LAN or the public internet. Optional Ollama and ComfyUI endpoints must also be secured and reviewed separately.
+## Important safety notice
 
-## Privacy
+**v1.3 is a pre-release candidate, not a production-hardened server.** The built-in HTTP service has no user authentication or TLS and is intended for local loopback use only. Do not expose it to a LAN, VPN, public IP, reverse proxy, or the Internet. Keep the bind address at `127.0.0.1`.
 
-Uploaded images, generated outputs, and session history are stored locally in the application's data directory. The application does not include a complete in-app retention manager. Review the privacy documentation before using it with sensitive images.
+The included tests passed in the available Linux/Python 3.13 environment, but this does not certify cross-platform compatibility, production security, model quality, or a fully offline installation. Read the security, privacy, and release-blocker documents before use or redistribution.
 
-## Licensing
+## Included checks
 
-The recovered source package contains an Apache License 2.0 for original Visual Eye project materials. That license does not automatically cover third-party software, AI models, model assets, or custom nodes. The package's third-party license inventory is preliminary and redistribution review remains incomplete.
+From `source/v1.3/01_Offline_Agent/`:
 
-## Before a stable public release
+```bash
+python -m compileall -q .
+python SELF_TEST.py
+python E2E_TEST.py
+python SECURITY_TEST.py
+python SESSION_SECURITY_TEST.py
+```
 
-- Complete dependency, container-image, model, and asset license review.
-- Pin exact dependency versions and container image digests.
-- Test clean installations on supported Windows, Linux, and macOS systems.
-- Complete English localization and bilingual QA.
-- Prepare a software bill of materials and final signed checksums.
-- Obtain the missing Academy Masterclass application source, if that component is to be included.
+## Other project materials
 
-## Project slogan
+- [Master Prompt Studio](source/v1.3/02_Master_Prompt_Studio/)
+- [Academy Masterclass references and status](source/v1.3/03_Academy_Masterclass/)
 
 *See more. Smile more.*
-
-
-## Separate ChatGPT interface
-
-A separate hosted MCP touch interface for the Visual Eye workflow is documented in [chatgpt-app/](chatgpt-app/). This ChatGPT integration is distinct from the local-first Offline Agent described above; it provides workflow controls and does not itself run the local Ollama/ComfyUI stack.
-
-- [ChatGPT app overview](chatgpt-app/README.md)
-- [ChatGPT app privacy policy](chatgpt-app/PRIVACY.md)
-- [ChatGPT app terms of use](chatgpt-app/TERMS.md)
-- [Support and issue tracker](https://github.com/mohammadhosseinazad/visual-eye-offline-agent-Description/issues)
-
-
-## Server Setup & Auto Connect
-
-The shared secure setup and connection specification for Offline Agent and the hosted ChatGPT app is documented in [docs/SERVER_SETUP_AND_AUTO_CONNECT.md](docs/SERVER_SETUP_AND_AUTO_CONNECT.md). This is an engineering specification, not a shipped installer; the complete Offline Agent source must be restored before implementation and platform testing.
-
-## Engineering documentation and company handover
-
-The following documents are maintained for developers, companies, and teams evaluating or adopting Visual Eye:
-
-- [Project handover and adoption checklist](docs/PROJECT_HANDOVER.md)
-- [Product scope and capability boundaries](docs/PRODUCT_SCOPE_AND_CAPABILITIES.md)
-- [Architecture and data flow](docs/ARCHITECTURE.md)
-- [Deployment and operations runbook](docs/DEPLOYMENT_AND_OPERATIONS.md)
-- [Security and privacy guidance](docs/SECURITY_AND_PRIVACY.md)
-- [QA matrix and release process](docs/QA_AND_RELEASE_PROCESS.md)
-- [Product roadmap and open work](docs/ROADMAP.md)
-- [Contributor and maintainer guidelines](CONTRIBUTING.md)
-- [Known release blockers](RELEASE_BLOCKERS.md)
-- [Preliminary third-party license review](THIRD_PARTY_LICENSE_REVIEW.md)
-
-**Important handover note:** These documents intentionally distinguish verified facts from open work. The Offline Agent v1.3 source archive is not yet committed to this repository, and the hosted MCP interface is a separate deliverable. A company considering adoption should follow the handover checklist and confirm source, rights, dependencies, and test evidence with the original creator.
